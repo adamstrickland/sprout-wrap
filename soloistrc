@@ -23,8 +23,9 @@ recipes:
 # development (rails)
 - sprout-rbenv
 - sprout-ruby
-- sprout-mysql
+# - sprout-mysql
 - sprout-postgresql
+-
 
 # apps
 - sprout-osx-apps::iterm2
@@ -32,10 +33,13 @@ recipes:
 - sprout-osx-apps::shiftit
 
 # apps (editors)
-- sprout-osx-apps::textmate_bundles
-- sprout-osx-apps::textmate_preferences
+# - sprout-osx-apps::textmate_bundles
+# - sprout-osx-apps::textmate_preferences
 - sprout-osx-apps::macvim
-- sprout-rubymine
+# - sprout-rubymine
+
+# extra stuff
+- tool-customizations
 
 node_attributes:
   sprout:
@@ -56,7 +60,7 @@ node_attributes:
       projects:
         -
           name: sprout-wrap
-          url: https://github.com/pivotal-sprout/sprout-wrap.git
+          url: https://github.com/adamstrickland/sprout-wrap.git
     terminal:
       default_profile: 'Pro'
     settings:
@@ -69,13 +73,20 @@ node_attributes:
       magnification': false
     homebrew:
       formulae:
-        - ctags-exuberant
         - ag
         - chromedriver
+        - clojure
+        - ctags-exuberant
+        - datomic
+        - elixir
+        - htop
         - imagemagick
         - node
         - pstree
+        - python
+        - pypy
         - qt
+        - rabbitmq
         - ssh-copy-id
         - tmux
         - tree
@@ -92,8 +103,43 @@ node_attributes:
         - google-drive
         - google-hangouts
         - skype
-        - textmate
+        # - textmate
+        - true-crypt
         - vagrant
         - virtualbox
         - xquartz
         - xscope
+# mine
+        - airmail-amt
+        - alfred
+        - crashplan
+        - daisydisk
+        - diffmerge
+        - divvy
+        - dropbox
+        - evernote
+        - ezeep
+        - fantastical
+        - flux
+        - geektool
+        - growl
+        - hipchat
+        - istat-menus
+        - libreoffice
+        - lighttable
+        - onepassword
+        - onyx
+        - pandora
+        - pixelmator
+        - pgadmin3
+        - screenhero
+        - skitch
+        - spacemonkey
+        - sptify
+        - steam
+        - sublime-text
+        - transmission
+        - transmit
+        - unity
+        - vlc
+        - wunderlist

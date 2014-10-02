@@ -1,0 +1,9 @@
+#!/bin/bash
+sudo pmset -c sleep 180
+sudo pmset -b sleep 180
+xcode-select --install
+cd /tmp && git clone https://github.com/adamstrickland/sprout-wrap.git
+cd sprout-wrap
+sudo gem install bundler && sudo bundle
+bundle exec soloist
+sudo pmset -b sleep 20
