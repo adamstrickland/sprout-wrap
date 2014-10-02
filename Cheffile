@@ -9,4 +9,4 @@ cookbook "osx", :github => "pivotal-sprout/osx"
 end
 
 cookbook "python"
-cookbook "python-tools"
+cookbook "tool-customizations", path: "site-cookbooks/tool-customizations"
