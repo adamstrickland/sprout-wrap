@@ -1,0 +1,5 @@
+description 'Tool customizations'
+long_description 'Tool customizations'
+maintainer 'Adam Strickland'
+maintainer_email 'adam.strickland@gmail.com'
+version '0.0.1'

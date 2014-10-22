@@ -4,7 +4,7 @@ site 'https://supermarket.getchef.com/api/v1'
 
 cookbook "osx", :github => "pivotal-sprout/osx"
 
-%w(rbenv ruby git base osx-apps homebrew terminal postgresql ssh).map do |pkg|
+%w(rbenv ruby git base osx-apps osx-settings rubymine homebrew terminal postgresql ssh).map do |pkg|
   cookbook "sprout-#{pkg}", :github => "pivotal-sprout/sprout-#{pkg}"
 end
 
